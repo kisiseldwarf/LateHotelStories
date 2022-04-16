@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d7d51e7b9556284e8ae627b17f63b72, type: 3}
+  m_Name: Peasant
+  m_EditorClassIdentifier: 
+  portrait: {fileID: 0}
+  inkFile: {fileID: 4900000, guid: 9f8768e878e7fab49b7d05dc86e417cb, type: 3}

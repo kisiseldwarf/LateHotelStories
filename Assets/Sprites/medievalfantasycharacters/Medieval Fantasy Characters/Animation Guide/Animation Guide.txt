@@ -1,0 +1,73 @@
+
+
+Animation Guide
+
+Due to the large number of different combinations it is almost crazy to create attack animations. 
+But I thought I'd give some advice for those who want to take advantage of creating their own animations.
+
+
+This is a little guide or rather some tips on how to combine sprites to create animations.
+These notes are accompanied by images that will useful as a visual reference, so do not forget to check them.
+
+It is important to know that I have created these animations thinking that you will be able to perform certain functions with your game engine such as: 
+
+linking or attaching objects to each other and rotating, scaling and positioning objects.
+
+Anyway, these are just a few examples, the possibilities are many, it just requires a good knowledge of your tools and some creativity.
+
+
+
+	attack_sample_01:
+
+1- the hand sprite must be linked or attached to the weapon sprite, so that both move at the same time.
+2- The weapon is rotated 90º backwards to create an anticipation
+3,4,5- The hand and weapon object are removed or hidden, and is exchanged for the hit effect animation.
+6- the weapon is rotated 90º forward
+7- the weapon is rotated 90º back to its original position
+
+I'm also going to include some samples to give you ideas on how to move the head and body to emphasize the animations.
+
+	attack_sample_02:
+
+To make this animation, what I did was stretch the body in frame 2 (the head must move upwards, still aligned with the body), in frame 3 the body shrink, and in frame 4 it returns to its original size.
+This trick is widely used in animation with the squash and stretch technique and greatly improves animation. 
+
+
+Another thing you can do is to use walk and jump sprites in attack animations. As you can see in examples 3 and 4. Interesting things can come out.
+
+	attack_sample_3
+
+- In frame 2 of the attack animation I replaced the body with that of frame 4 of the walk animation. (repeat it 2 times)
+- In frame 4 of the attack animation I replaced the body with that of frame 1 of the walk animation. (repeat it 2 times)
+
+attack_sample_4
+
+- In frame 2 of the attack animation I replaced the body with that of frame 3 of the jump animation. (repeat it 2 times)
+- In frame 4 of the attack animation I replaced the body with that of frame 2 of the jump animation. (repeat it 2 times)
+
+
+
+This part is a reference to know how the idle, walk and jump animations work, to have a better location of where to place the different parts of the character (head, hands, weapons) in relation to the body.
+
+
+idle animation:                 
+first frame = no motion
+second frame = 1 px down
+third frame = 1 px down
+fourth frame = 1 px up
+When using the animation in a loop, remember that from frame 4 to 1 the body rises 1 px to return to the original position
+
+walk animation:
+first frame = no motion
+second frame = 1 px down
+third frame = 1 px up
+fourth frame = 1 px up
+For the following frames the movement is the same, with the other foot. Just remember that from frame 4 to 5 the body down 1 px to return to the original position like in frame 1.
+
+run animation:
+The movement is exactly the same as in the walk animation.
+
+jump animation:
+first frame = no motion
+second frame = 1 px down
+third frame = 3 px up
